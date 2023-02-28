@@ -6,8 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // here is render app component when create root node in dom that is VDom
   <React.StrictMode>
-    <App />
+    <App name='sajad' />
   </React.StrictMode>
 );
 
