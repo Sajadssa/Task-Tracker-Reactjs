@@ -62,7 +62,7 @@ max-width: 500px;
 }
 
 .task.reminder {
-  border-left: 5px solid green;
+  border-left: 5px solid rgba(10, 241, 10, 0.452);
 }
 
 .task h3 {

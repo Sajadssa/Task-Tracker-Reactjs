@@ -3,7 +3,7 @@
 import Task from "./Task";
  
 // passing props to Tasks component
-const Tasks = ({tasks}) => {
+const Tasks = ({ tasks, onDelete, onToggle }) => {
     
     
     
@@ -13,7 +13,7 @@ const Tasks = ({tasks}) => {
         
     <>
             {/* for show all tasks in DOM we access to tasks and iterate over an array by method map or forEach */}
-            {tasks.map(task =><Task key={task.id} task={task}/>)}
+        {tasks.map(task => <Task key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />)}
             {/* render separate in new component */}
     </>
   )
